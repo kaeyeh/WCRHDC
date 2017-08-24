@@ -27,6 +27,18 @@ http://www.templatemo.com/tm-486-new-event
 </head>
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
+<div id="regModal" class="modal fade bs-example-modal-sm" role=dialog tabindex=-1 aria-labelledby=mySmallModalLabel>
+  <div class="modal-dialog modal-sm" role=document>
+    <div class=modal-content>
+      <div class=modal-header> <button type=button class=close data-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span></button>
+        <h4 class=modal-title id=mySmallModalLabel>Registration</h4>
+      </div>
+      <div id="regModalBody" class=modal-body></div>
+    </div>
+  </div>
+</div>
+
+
 <!-- =========================
      PRE LOADER       
 ============================== -->
@@ -453,17 +465,17 @@ http://www.templatemo.com/tm-486-new-event
 		<div class="row">
 
 			<div class="wow fadeInUp col-md-7 col-sm-7" data-wow-delay="0.6s">
-				<h2>Register Here</h2>
+				<h2>Volunteer Register Here</h2>
 				<h3>Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet tellus iaculis hendrerit.</h3>
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet consectetuer diam nonummy.</p>
 			</div>
 
 			<div class="wow fadeInUp col-md-5 col-sm-5" data-wow-delay="1s">
-				<form action="#" method="post">
-					<input name="firstname" type="text" class="form-control" id="firstname" placeholder="First Name">
-					<input name="lastname" type="text" class="form-control" id="lastname" placeholder="Last Name">
-					<input name="phone" type="telephone" class="form-control" id="phone" placeholder="Phone Number">
-					<input name="email" type="email" class="form-control" id="email" placeholder="Email Address">
+				<form id="volunteer" action="#" method="post">
+					<input required name="firstName" type="text" class="form-control" id="firstname" placeholder="First Name">
+					<input required name="lastName" type="text" class="form-control" id="lastname" placeholder="Last Name">
+					<input required name="phone" type="telephone" class="form-control" id="phone" placeholder="Phone Number">
+					<input required name="email" type="email" class="form-control" id="email" placeholder="Email Address">
 					<div class="col-md-offset-6 col-md-6 col-sm-offset-1 col-sm-10">
 						<input name="submit" type="submit" class="form-control" id="submit" value="REGISTER">
 					</div>
@@ -686,6 +698,7 @@ http://www.templatemo.com/tm-486-new-event
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/js-shortid.js"></script>
 <script src="js/custom.js"></script>
 
 </body>
